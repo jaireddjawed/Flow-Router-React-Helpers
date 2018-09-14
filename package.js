@@ -2,9 +2,9 @@
 
 Package.describe({
   name: 'jaireddjawed:flow-router-react-helpers',
-  version: '0.0.1',
+  version: '1.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Makes Flow Router function like react router.',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/jaireddjawed/Flow-Router-React-Helpers',
   // By default, Meteor will default to using README.md for documentation.
@@ -21,13 +21,14 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('kadira:flow-router');
+  api.use('kadira:flow-router@2.12.1');
   api.use('jaireddjawed:flow-router-react-helpers');
   api.mainModule('flow-router-react-helpers-tests.js');
 });
 
 Npm.depends({
-  react: '',
-  'react-dom': '',
-  'react-mounter': '',
+  react: '16.4.1',
+  'react-dom': '16.4.1',
+  'prop-types': '15.6.2',
+  'react-mounter': '1.2.0',
 });
