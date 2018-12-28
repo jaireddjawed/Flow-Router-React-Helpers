@@ -1,4 +1,4 @@
-<h1>Flow Router React Helpers</h1>
+# Flow Router React Helpers
 
 Flow Router React Helpers shortens your router code by creating a Flow Router API similar to React Router version 3.
 
