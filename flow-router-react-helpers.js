@@ -15,6 +15,8 @@ export const render = (app) => {
         name,
         title,
         authenticated,
+        onEnter,
+        onExit,
       } = element.props;
 
       FlowRouter.route(path, {
@@ -26,8 +28,17 @@ export const render = (app) => {
 
           if (authenticated) {
             if (!Meteor.loggingIn() && !Meteor.user()) {
-              FlowRouter.go('Login');
+              FlowRouter.go('/login');
             }
+          }
+
+          if (onEnter) {
+            onEnter();
+          }
+        }],
+        triggersExit: [() => {
+          if (onExit) {
+            onExit();
           }
         }],
         action: (params, queryParams) => {
@@ -41,7 +52,7 @@ export const render = (app) => {
 };
 
 export const Route = ({ children }) => (
-  {children}
+  { children }
 );
 
 Route.defaultProps = {
