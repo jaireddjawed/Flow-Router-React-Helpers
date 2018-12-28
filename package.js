@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'jaireddjawed:flow-router-react-helpers',
-  version: '1.0.2',
+  version: '1.0.3',
   // Brief, one-line summary of the package.
   summary: 'Makes Flow Router function like react router.',
   // URL to the Git repository containing the source code for this package.

@@ -4,9 +4,10 @@ Flow Router React Helpers shortens your router code by creating a Flow Router AP
 
 ### Prerequisites
 
-Install the Flow Router React Helpers Package
+Install the Flow Router & the React Helpers Package
 
 ```
+meteor add kadira:flow-router
 meteor add jaireddjawed:flow-router-react-helpers
 ```
 
