@@ -86,8 +86,7 @@ import { pathFor, currentRoute } from 'meteor/jaireddjawed:flow-router-react-hel
 const Navigation = () => (
   <nav className="navbar nav">
     <ul className="ml-auto">
-      <div className={`nav-item ${currentRoute('login') ? 'active'
-      : ''}`}>
+      <div className={`nav-item ${currentRoute('login') ? 'active' : ''}`}>
         <a href={pathFor('login')} className='nav-link'>Login</a>
       </div>
       <div className={`nav-item ${currentRoute('signup') ? 'active' : ''}`}>
