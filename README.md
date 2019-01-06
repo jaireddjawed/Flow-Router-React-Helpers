@@ -76,6 +76,22 @@ render(<>
 </>);
 ```
 
+## Parameters
+You can access router parameters with the params and queryParams props.
+
+```jsx
+class ResetPassword extends React.Component {
+   handleSubmit() {
+      const { token } = this.props.params;
+      const { additionalInfo } = this.props.queryParams;
+   }
+   
+   render() {
+    // Render page here
+   }
+}
+```
+
 ## Additional Helpers
 You can get a routes path by name and determine the active route.
 
